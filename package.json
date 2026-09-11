@@ -1,0 +1,25 @@
+{
+  "name": "my-ads-browser",
+  "version": "0.1.0",
+  "description": "Minimal Electron-based browser profile orchestrator. Launches a bundled Chromium kernel via spawn + CDP and exposes a local HTTP API.",
+  "main": "src/main.js",
+  "scripts": {
+    "start": "electron .",
+    "start:nogui": "electron . --no-window",
+    "api": "node src/headless.js"
+  },
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.21.2",
+    "proxy-chain": "^2.5.7",
+    "ws": "^8.21.0"
+  },
+  "devDependencies": {
+    "better-sqlite3": "^12.10.0",
+    "electron": "^31.7.7",
+    "png-to-ico": "^3.0.1",
+    "rcedit": "^5.0.2",
+    "sharp": "^0.34.5"
+  }
+}
